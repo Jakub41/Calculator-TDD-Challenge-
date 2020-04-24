@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App AppLayout Snapshot renderer 1`] = `
+<div
+  className="css-14fwp1f"
+>
+  <div
+    className="css-1esthja"
+  />
+</div>
+`;

@@ -3,9 +3,7 @@
 exports[`Calculator Component Calculator Snapshot renderer 1`] = `
 <div
   className="css-1esthja"
->
-  HERE CALCULATOR
-</div>
+/>
 `;
 
 exports[`Calculator Component CalculatorDiv Snapshot renderer 1`] = `

@@ -6,9 +6,7 @@ exports[`AppLayout Component AppLayout Snapshot renderer 1`] = `
 >
   <div
     className="css-1esthja"
-  >
-    HERE CALCULATOR
-  </div>
+  />
 </div>
 `;
 

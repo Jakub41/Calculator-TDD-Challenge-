@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "@testing-library/user-event": "^10.1.0",
+    "prop-types-extra": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -17,16 +18,18 @@
       "enzyme-to-json/serializer"
     ],
     "collectCoverageFrom": [
-      "src/**/*.js, !src/index.js"
+      "src/**/*.js",
+      "!src/index.js"
     ],
     "coverageReporters": [
-      "text"
+      "text",
+      "html"
     ]
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --watchAll",
+    "test": "react-scripts test --coverage --watchAll -u --transformIgnorePatterns 'node_modules/(?!(<package-need-to-transform>|<other-package-need-to-transform>)/)'",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
