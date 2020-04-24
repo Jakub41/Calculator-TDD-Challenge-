@@ -1,11 +1,12 @@
 import React from "react";
 import { ContentLayout } from "./styles";
+import Calculator from "../Calculator";
 
-const AppLayout = ({ children }) => {
+const AppLayout = () => {
 	return (
 		<>
 			<ContentLayout>
-				<div>{children}</div>
+				<Calculator />
 			</ContentLayout>
 		</>
 	);
