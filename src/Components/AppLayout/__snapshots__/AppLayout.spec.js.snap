@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppLayout Component AppLayout Snapshot renderer 1`] = `
+<div
+  className="css-14fwp1f"
+>
+  <div />
+</div>
+`;
+
+exports[`AppLayout Component ContentLayout Snapshot renderer 1`] = `
+<div
+  className="css-14fwp1f"
+/>
+`;
