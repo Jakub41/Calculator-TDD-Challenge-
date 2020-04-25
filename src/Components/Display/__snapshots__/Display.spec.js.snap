@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Display Snapshot renderer 1`] = `
+<div
+  className="css-1esthja"
+>
+  
+</div>
+`;
+
+exports[`Display DisplayDiv Snapshot renderer 1`] = `
+<div
+  className="css-1esthja"
+/>
+`;
+
+exports[`Display should render correctly 1`] = `
+<Fragment>
+  <Styled(div) />
+</Fragment>
+`;
