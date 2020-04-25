@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 import Calculator from "./Calculator";
 import { CalculatorDiv } from "./styles";
 import renderer from "react-test-renderer";
+import Display from "../Display";
 
 describe("Calculator Component", () => {
 	let wrapper;
@@ -23,5 +24,12 @@ describe("Calculator Component", () => {
 
 	it("Should render Calculator", () => {
 		expect(wrapper.find(CalculatorDiv)).toHaveLength(1);
+	});
+
+	const displayValue = "test";
+	it("should render the Display Component", () => {
+		expect(
+			wrapper.containsMatchingElement(<Display displayValue={displayValue} />)
+		).toEqual(true);
 	});
 });

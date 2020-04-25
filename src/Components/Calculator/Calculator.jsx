@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { CalculatorDiv } from "./styles";
+import Display from "../Display";
 
 const Calculator = () => {
+	const [displayValue, setDisplayValue] = useState("");
+
 	return (
 		<>
-			<CalculatorDiv></CalculatorDiv>
+			<CalculatorDiv>
+				<Display displayValue={displayValue} />
+			</CalculatorDiv>
 		</>
 	);
 };

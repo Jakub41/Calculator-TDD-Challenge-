@@ -6,6 +6,12 @@ exports[`App AppLayout Snapshot renderer 1`] = `
 >
   <div
     className="css-1esthja"
-  />
+  >
+    <div
+      className="css-1esthja"
+    >
+      
+    </div>
+  </div>
 </div>
 `;
