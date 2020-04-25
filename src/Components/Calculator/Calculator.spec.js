@@ -26,7 +26,7 @@ describe("Calculator Component", () => {
 		expect(wrapper.find(CalculatorDiv)).toHaveLength(1);
 	});
 
-	const displayValue = "test";
+	const displayValue = "";
 	it("should render the Display Component", () => {
 		expect(
 			wrapper.containsMatchingElement(<Display displayValue={displayValue} />)
