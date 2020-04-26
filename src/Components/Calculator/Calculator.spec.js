@@ -4,6 +4,7 @@ import Calculator from "./Calculator";
 import { CalculatorDiv } from "./styles";
 import renderer from "react-test-renderer";
 import Display from "../Display";
+import Keypad from "../Keypad";
 
 describe("Calculator Component", () => {
 	let wrapper;
@@ -26,10 +27,25 @@ describe("Calculator Component", () => {
 		expect(wrapper.find(CalculatorDiv)).toHaveLength(1);
 	});
 
-	const displayValue = "";
+	const displayValue = "0";
 	it("should render the Display Component", () => {
 		expect(
 			wrapper.containsMatchingElement(<Display displayValue={displayValue} />)
+		).toEqual(true);
+	});
+
+	it("should render the Display and Keypad Components", () => {
+		expect(
+			wrapper.containsAllMatchingElements([
+				<Display displayValue={displayValue} />,
+				<Keypad
+					// callOperator={wrapper.instance().callOperator}
+					// numbers={wrapper.instance().state.numbers}
+					// operators={wrapper.instance().state.operators}
+					// setOperator={wrapper.instance().setOperator}
+					// updateDisplay={wrapper.instance().updateDisplay}
+				/>,
+			])
 		).toEqual(true);
 	});
 });
