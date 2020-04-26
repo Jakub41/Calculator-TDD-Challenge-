@@ -11,7 +11,14 @@ exports[`Calculator Component Calculator Snapshot renderer 1`] = `
   </div>
   <div
     className="css-1esthja"
-  />
+  >
+    <div
+      className="css-1esthja"
+    />
+    <div
+      className="css-1esthja"
+    />
+  </div>
 </div>
 `;
 

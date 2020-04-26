@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { KeypadDiv } from "./styles";
+import { KeypadDiv, NumbersDiv, OperatorsDiv } from "./styles";
 
 const Keypad = ({
 	callOperator,
@@ -8,7 +8,12 @@ const Keypad = ({
 	operators,
 	setOperator,
 	updateDisplay,
-}) => <KeypadDiv />;
+}) => (
+	<KeypadDiv>
+		<NumbersDiv></NumbersDiv>
+		<OperatorsDiv></OperatorsDiv>
+	</KeypadDiv>
+);
 
 // Keypad.propTypes = {
 // 	callOperator: PropTypes.func.isRequired,

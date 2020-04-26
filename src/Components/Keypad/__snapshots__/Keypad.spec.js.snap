@@ -1,3 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Keypad should render correctly 1`] = `<Styled(div) />`;
+exports[`Keypad should render Keypad block 1`] = `
+<div
+  className="css-1esthja"
+>
+  <div
+    className="css-1esthja"
+  />
+  <div
+    className="css-1esthja"
+  />
+</div>
+`;
+
+exports[`Keypad should render correctly 1`] = `
+<Styled(div)>
+  <Styled(div) />
+  <Styled(div) />
+</Styled(div)>
+`;
