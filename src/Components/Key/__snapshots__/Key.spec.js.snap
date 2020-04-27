@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Key should render correctly 1`] = `
+<Fragment>
+  <Styled(div)>
+    <Styled(button) />
+  </Styled(div)>
+</Fragment>
+`;

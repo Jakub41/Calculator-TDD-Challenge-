@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 import Keypad from "./Keypad";
 import { KeypadDiv, NumbersDiv, OperatorsDiv } from "./styles";
+import Key from "../Key";
 
 describe("Keypad", () => {
 	let wrapper;
@@ -10,11 +11,11 @@ describe("Keypad", () => {
 	beforeEach(() => {
 		wrapper = shallow(
 			<Keypad
-			// callOperator={jest.fn()}
-			// numbers={[]}
-			// operators={[]}
-			// setOperator={jest.fn()}
-			// updateDisplay={jest.fn()}
+				callOperator={jest.fn()}
+				// numbers={[]}
+				// operators={[]}
+				// setOperator={jest.fn()}
+				// updateDisplay={jest.fn()}
 			/>
 		);
 	});
@@ -43,5 +44,9 @@ describe("Keypad", () => {
 
 	it("should render a <OperatorsDiv />", () => {
 		expect(wrapper.find(OperatorsDiv)).toHaveLength(1);
+	});
+
+	it("should render an instance of the Key component", () => {
+		expect(wrapper.find("Key")).toHaveLength(1);
 	});
 });

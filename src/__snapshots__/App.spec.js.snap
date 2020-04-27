@@ -21,6 +21,15 @@ exports[`App AppLayout Snapshot renderer 1`] = `
       <div
         className="css-1esthja"
       />
+      <div
+        className="css-1esthja"
+      >
+        <button
+          className="css-1esthja"
+        >
+          
+        </button>
+      </div>
     </div>
   </div>
 </div>

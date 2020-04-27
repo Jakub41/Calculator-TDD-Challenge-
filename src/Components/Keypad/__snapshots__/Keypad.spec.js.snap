@@ -17,5 +17,10 @@ exports[`Keypad should render correctly 1`] = `
 <Styled(div)>
   <Styled(div) />
   <Styled(div) />
+  <Key
+    keyAction={[MockFunction]}
+    keyType=""
+    keyValue=""
+  />
 </Styled(div)>
 `;

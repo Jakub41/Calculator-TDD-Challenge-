@@ -18,6 +18,15 @@ exports[`Calculator Component Calculator Snapshot renderer 1`] = `
     <div
       className="css-1esthja"
     />
+    <div
+      className="css-1esthja"
+    >
+      <button
+        className="css-1esthja"
+      >
+        
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -26,4 +35,17 @@ exports[`Calculator Component CalculatorDiv Snapshot renderer 1`] = `
 <div
   className="css-1esthja"
 />
+`;
+
+exports[`Calculator Component should render correctly 1`] = `
+<Fragment>
+  <Styled(div)>
+    <Display
+      displayValue="0"
+    />
+    <Keypad
+      callOperator={[Function]}
+    />
+  </Styled(div)>
+</Fragment>
 `;

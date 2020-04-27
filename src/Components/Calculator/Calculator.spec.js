@@ -11,6 +11,8 @@ describe("Calculator Component", () => {
 
 	beforeEach(() => (wrapper = shallow(<Calculator />)));
 
+	it("should render correctly", () => expect(wrapper).toMatchSnapshot());
+
 	it("Calculator Snapshot renderer", () => {
 		const component = renderer.create(<Calculator />);
 		let tree = component.toJSON();
@@ -34,12 +36,17 @@ describe("Calculator Component", () => {
 		).toEqual(true);
 	});
 
+	const callOperator = () => {
+		console.log("call operation");
+	};
+
 	it("should render the Display and Keypad Components", () => {
+		console.log(wrapper.debug());
 		expect(
 			wrapper.containsAllMatchingElements([
 				<Display displayValue={displayValue} />,
 				<Keypad
-					// callOperator={wrapper.instance().callOperator}
+					callOperator={callOperator}
 					// numbers={wrapper.instance().state.numbers}
 					// operators={wrapper.instance().state.operators}
 					// setOperator={wrapper.instance().setOperator}

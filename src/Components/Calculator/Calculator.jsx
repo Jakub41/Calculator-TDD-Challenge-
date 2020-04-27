@@ -10,16 +10,20 @@ const Calculator = () => {
 	const [selectedOperator, setSelectedOperator] = useState("");
 	const [storedValue, setStoredValue] = useState("");
 
+	const callOperator = () => {
+		console.log("call operation");
+	};
+
 	return (
 		<>
 			<CalculatorDiv>
 				<Display displayValue={displayValue} />
 				<Keypad
-				// 	callOperator={callOperator}
-				// 	numbers={numbers}
-				// 	operators={operators}
-				// 	setOperator={setOperator}
-				// 	updateDisplay={updateDisplay}
+					callOperator={callOperator}
+					// 	numbers={numbers}
+					// 	operators={operators}
+					// 	setOperator={setOperator}
+					// 	updateDisplay={updateDisplay}
 				/>
 			</CalculatorDiv>
 		</>
