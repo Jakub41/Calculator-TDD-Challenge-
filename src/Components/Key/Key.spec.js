@@ -10,7 +10,7 @@ describe("Key", () => {
 		wrapper = shallow(<Key keyAction={jest.fn()} keyType={""} keyValue={""} />);
 	});
 
-	it('should render correctly', () => expect(wrapper).toMatchSnapshot());
+	it("should render correctly", () => expect(wrapper).toMatchSnapshot());
 
 	it("should render a <KeyDiv />", () => {
 		expect(wrapper.find(KeyDiv)).toHaveLength(1);
